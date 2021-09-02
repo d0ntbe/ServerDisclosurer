@@ -40,8 +40,12 @@ def location_boom(a):
 
 ############## CFG ####################
 
-input = sys.argv[1]
-
+try:
+    input = sys.argv[1]
+except:
+    print('\n\nFormat error! USAGE: ServerDisclosure.py https://thetargetplace.com 443\n')
+    exit()
+    
 if input.find("https:") != -1:
     proto = 'https://'
 if input.find("http:") != -1:
@@ -49,14 +53,8 @@ if input.find("http:") != -1:
 
 server = input.strip(proto)
 
-try:
 
-    port = sys.argv[2]
-
-except:
-
-    print('Setting port - 443')
-    port = ''
+port = ''
 location = '/'
 
 cases_location = ["1", "2", "etc/nginx", "nginx.conf", "common.txt", "api../", "v1/../",
