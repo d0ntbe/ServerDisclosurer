@@ -1,6 +1,6 @@
 # ServerDisclosurer
 
-The easy way to find out the Web server of target is.....
+The easiest way to find out the Web server of target is.....
 
 USAGE: 
 
