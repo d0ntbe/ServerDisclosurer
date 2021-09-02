@@ -47,7 +47,7 @@ def location_boom(a):
 try:
     input = sys.argv[1]
 except:
-    print('\n\nFormat error! USAGE: ServerDisclosure.py https://thetargetplace.com 443\n')
+    print('\n\nFormat error! USAGE: ServerDisclosure.py https://thetargetplace.com\n')
     exit()
 
 if input.find("https:") != -1:
